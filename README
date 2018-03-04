@@ -1,0 +1,52 @@
+Am creat 5 clase : 
+
+
+Directory
+Document
+File
+JsonReader
+Visual
+
+
+
+Document : este o clasa ce va fi extinsa de catre File si Directory , 
+	continand componentele comune : id , name , type si in plus pentru 
+	Directory nrContents si contents(ArrayList de Document)
+
+
+File : initializez in constructor cele necesare 
+
+DIrectory : initializez in constructor cele necesare si 
+	setez nrContents la 0 (voi adauga pe masura ce citesc )
+
+
+
+Visual : este clasa folosita pentru swing si windowlistener , pentru a adauga butoanele . 
+	Am creat o functie addButton cu 3 parametri : string 
+	(numele butonului - in functie de numele directorului) , elements un array
+	 	de stringuri pentru a seta numele TextField-urilor 
+		in functie de directorul /fisierul afisat si nrContents 
+
+	Pentru fiecare buton in parte exista metoda addActionListener 
+		in care suprascriu metoda actionPerformed pentru a seta TextFields
+
+
+
+
+JsonReader : clasa in care se afla si main-ul
+- metodele readAll si readJsonFromUrl sunt folosite 
+	pentru a citi continutul , urmand apoi in main parsarea
+
+-in main : verific in functie de fiecare tip al 
+	documentului , daca este file sau directory 
+
+
+
+
+
+
+
+
+
+
+
